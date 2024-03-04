@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EBACplay</title>
+    <link rel="stylesheet" href="/lib/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <h1>ebacPLAY</h1>
+          <nav>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Novidades</a>
+              </li>
+              <li  class="nav-item"><a  class="nav-link" href="seriess">Séries </a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Filmes</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Novelas</a></li>
+              <li class="nav-item">
+                <a id="doorIcon" class="nav-link" href="#"
+                  ><span class="bi bi-door-open"></span
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <h4>Já tem uma conta EBACplay?</h4>
+          <p>Entre com sua conta e conheça os melhores planos pra você!</p>
+          <button class="btn-entrar btn btn-sm" type="submit">Entrar</button>
+          <h5>Ainda não é assinante?</h5>
+          <button class="btn-assine btn btn-sm" id="assine" type="submit">
+            Assine já
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <button
+        data-bs-target="#carousel-exemplo"
+        data-bs-slide="prev"
+        id="buton_prev"
+        class="carousel-control-prev"
+        type="button"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        data-bs-target="#carousel-exemplo"
+        data-bs-slide="next"
+        id="buton_next"
+        class="carousel-control-next"
+        type="button"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <div
+        id="carousel-exemplo"
+        class="carousel slide container-fluid"
+        data-bs-ride="carousel"
+      >
+        <div data-bs-interval="2000" class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="/imagens/tapasEbeijos_carrosel.webp"
+            alt="Elenco de Tapas e Beijos"
+          />
+          <h1>AS AVENTURAS DE DUAS AMIGAS EM COPACABANA</h1>
+          <h4>Descubra mais sobre a vida de Fátima e Sueli</h4>
+          <button id="assista">Assista:</button>
+          <button>Adicione a lista</button>
+        </div>
+        <div data-bs-interval="2000" class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="/imagens/agrandeFamilia_carrossel.jpg"
+            alt="Elenco a grande família"
+          />
+          <h1>A GRANDE FAMÍLIA</h1>
+          <h4>
+            Acompanhe as confusões dessa família suburbana que brigam demais mas
+            sempre acambam unidos.
+          </h4>
+          <button id="assista">Assista:</button>
+          <button>Adicionar a lista</button>
+        </div>
+        <div data-bs-interval="2000" class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="/imagens/rebelde_globoplay.jpg"
+            alt="Elenco de Rebelde"
+          />
+          <h1>O FENÔMENO JUVENIL CHEGOU NO GLOBOPLAY</h1>
+          <h4>
+            Seis jovens que descobrem que apesar de todas as diferenças, possuem
+            algo em comum: O amor pela música!
+          </h4>
+          <button id="assista">Assista:</button>
+          <button>Adicionar a lista</button>
+        </div>
+        <div data-bs-interval="2000" class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="/imagens/bbb_carrosel.webp"
+            alt="Big Brother Brasil"
+          />
+          <h1>ACOMPANHE A CASA 24 HORAS POR DIA</h1>
+          <h4>No globoplay você acompanha tudo que quiser!</h4>
+          <button id="assista">Assista:</button>
+          <button>Adicione a lista</button>
+        </div>
+      </div>
+      <h5 id="keep_wacthing">Continue assistindo:</h5>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="card">
+              <img
+                src="/imagens/forca_do_querer_1.webp"
+                alt="Cena de a força do querer"
+              />
+              <div class="card-body">
+                <h5>T1-56</h5>
+                <h6>A FORÇA DO QUERER - NOVELA</h6>
+                <button id="play">
+                  <span class="bi-play-fill"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img
+                src="/imagens/rebelde_cena_2.jpg"
+                alt="Cena de REBELDE"
+              />
+              <div class="card-body">
+                <h5>T1-02</h5>
+                <h6> REBELDE - NOVELA</h6>
+                <button id="play">
+                  <span class="bi-play-fill"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img
+                src="/imagens/toma_la_da_ca_cena3.webp"
+                alt="Cena de TOMA LA DA CA"
+              />
+              <div class="card-body">
+                <h5>T1-04</h5>
+                <h6>TOMA LÁ DÁ CÁ - SÉRIE</h6>
+                <button id="play">
+                  <span class="bi-play-fill"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          </div> 
+        </div>
+        <h4 id="seriess" class="series">Séries:</h4>
+        <div class="row">
+          <div class="col-4">
+            <div class="card" id="serie_capa">
+              <img
+                src="/imagens/sob_pressao_serie_1.webp"
+                alt="sob pressão"
+              />
+              <div class="card-body">
+                <h5>SOB PRESSÃO</h5>
+                <h6>5 TEMPORADAS</h6>
+                <button id="play">
+                  <span class="bi-play-fill"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" id="serie_capa">
+              <img
+                src="/imagens/vale_o_escrito_serie_3.webp"
+                alt="Cena de REBELDE"
+              />
+              <div class="card-body">
+                <h5>VALE O ESCRITO</h5>
+                <h6> 1ª TEMPORADA</h6>
+                <button id="play">
+                  <span class="bi-play-fill"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" id="serie_capa">
+              <img
+                src="/imagens/todo_mundo_odeia_chris.webp"
+                alt="TODO MUNDO ODEIA O CHRIS"
+              />
+              <div class="card-body">
+                <h5>TODO MUNDO ODEIA O CHRIS</h5>
+                <h6>3 TEMPORADAS</h6>
+                <button id="play">
+                  <span class="bi-play-fill"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          </div> 
+          <h4 id="novelas">Novelas:</h4>
+          <div class="row">
+            <div class="col-4">
+              <div class="card" id="serie_capa">
+                <img
+                  src="/imagens/mulheres_apaixonadas_novela1.PNG"
+                  alt="sob pressão"
+                />
+                <div class="card-body">
+                  <h5>SOB PRESSÃO</h5>
+                  <h6>5 TEMPORADAS</h6>
+                  <button id="play">
+                    <span class="bi-play-fill"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card" id="serie_capa">
+                <img
+                  src="/imagens/rebelde_globoplay.jpg"
+                  alt="Cena de REBELDE"
+                />
+                <div class="card-body">
+                  <h5>REBELDE</h5>
+                  <h6> 1ª TEMPORADA</h6>
+                  <button id="play">
+                    <span class="bi-play-fill"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card" id="serie_capa">
+                <img
+                  src="/imagens/penso_em_ti_novela3.PNG"
+                  alt="TODO MUNDO ODEIA O CHRIS"
+                />
+                <div class="card-body">
+                  <h5>PENSO EM TI</h5>
+                  <h6>1 TEMPORADA</h6>
+                  <button id="play">
+                    <span class="bi-play-fill"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            </div> 
+         <H4 id="filmes">Filmes:</H4>
+         <div class="row">
+          <div class="col-4">
+            <div class="card" id="serie_capa">
+              <img
+                src="imagens/minhamae_filme1.PNG"
+                alt="sob pressão"
+              />
+              <div class="card-body">
+                <h5>MINHA MÃE É UMA PEÇA 3</h5>
+                <h6>180 MINUTOS</h6>
+                <button id="play">
+                  <span class="bi-play-fill"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" id="serie_capa">
+              <img
+                src="/imagens/to_ryca_filme2.PNG"
+                alt="Cena de REBELDE"
+              />
+              <div class="card-body">
+                <h5>TO RYCA 2</h5>
+                <h6>145 MINUTOS</h6>
+                <button id="play">
+                  <span class="bi-play-fill"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" id="serie_capa">
+              <img
+                src="/imagens/vai_que_cola2.PNG"
+                alt="TODO MUNDO ODEIA O CHRIS"
+              />
+              <div class="card-body">
+                <h5>SHREK 2</h5>
+                <h6>158 MINUTOS</h6>
+                <button id="play">
+                  <span class="bi-play-fill"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          </div> 
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="/lib/bootstrap.bundle.min.js"></script>
+    <script src="/script.js"></script>
+  </body>
+  <footer>
+    &REG SITE DESENVOLVIDO POR CASSIANO CALIAN
+  </footer>
+</html>

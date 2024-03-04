@@ -1,0 +1,173 @@
+.btn-assine {
+  background: linear-gradient(to bottom right, red, yellow) !important;
+  color: white; /* Cor do texto */
+  padding: 8px 10px; /* Espaçamento interno */
+  border-radius: 8px; /* Borda arredondada */
+  width: 100%;
+}
+
+.modal-content {
+  padding-bottom: 20px; /* Altere o valor conforme desejado */
+}
+
+.btn-entrar {
+  background: linear-gradient(to bottom right, blue, #fff) !important;
+  color: white; /* Cor do texto */
+  padding: 8px 10px; /* Espaçamento interno */
+  border-radius: 8px; /* Borda arredondada */
+  width: 100%;
+}
+
+.modal-content {
+  width: 60%;
+  background-color: dimgrey;
+  color: #fff;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+}
+
+header h1 {
+  font-family: "Madimi One", sans-serif;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+body {
+  background-color: #000;
+}
+
+#carousel-exemplo img {
+  justify-content: center;
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  margin: 0px;
+  box-shadow: 800px 800px 8000px rgba(0, 0, 0, 0.2);
+}
+
+#carousel-exemplo h1 {
+  color: #fff;
+}
+
+#carousel-exemplo h4 {
+  color: rgb(178, 179, 178);
+}
+
+#carousel-exemplo button {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#assista {
+  background: linear-gradient(
+    to bottom right,
+    rgb(255, 38, 0),
+    rgb(255, 115, 0)
+  );
+}
+
+.carousel-control-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.carousel {
+  width: 100%; /* Ocupa toda a largura disponível */
+  overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse a área do carrossel */
+}
+
+#carousel {
+  padding-left: 40px; /* Ajuste conforme necessário */
+}
+
+#buton_prev {
+  padding-left: 265px;
+  padding-bottom: 260px;
+}
+
+#buton_next {
+  padding-right: 260px;
+  padding-bottom: 372px;
+}
+
+#keep_wacthing {
+  padding-top: 18px;
+  color: #fff;
+}
+
+h4 {
+  padding-bottom: 15px;
+}
+
+.bi-play-fill {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+
+#play {
+  color: #fff;
+  font-size: xx-large;
+}
+
+.card img {
+  width: 100%; /* Defina a largura para ocupar 100% do contêiner pai */
+  height: 200px; /* Defina a altura desejada */
+  object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
+}
+
+.series {
+  color: #fff;
+  padding-top: 15px;
+}
+
+#novelas {
+  color: #fff;
+  padding-top: 15px;
+}
+
+#filmes {
+  color: #fff;
+  padding-top: 15px;
+}
+
+footer {
+  padding: 10px;
+  padding-top: 40px;
+  background-color: #000;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .container,
+  .row,
+  .col-4,
+  .card {
+    width: 100%; /* Definir a largura para 100% para que apenas um card apareça por linha */
+    padding: 10px;
+    display: block; /* Ajustar o espaçamento entre os cards conforme necessário */
+  }
+  #carousel-exemplo img {
+    height: auto; /* Defina a altura como automática para que a imagem mantenha a proporção original */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .col-4 {
+    width: 50%; /* Defina a largura para 50% para que dois cards apareçam por linha */
+    padding: 10px;
+    display: inline-block; /* Ajuste o display para inline-block para que os cards fiquem lado a lado */
+    float: none; /* Remova o float que está sendo aplicado no estilo padrão */
+  }
+}
